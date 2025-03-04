@@ -95,10 +95,11 @@ html[data-theme="dark"] {
 }
 
 /* MAIN CSS */
+/* TODO: Choose a background and text color of your liking using the available variables. */
 body {
     display: flex;
-    background-color: var(--color-background);
-    color: var(--text-color-blue);
+    background-color: ;
+    color: ;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -121,15 +122,17 @@ body {
     line-height: 1.15em;
 }
 
+/* TODO: Choose a text color of your liking using the available variables. */
 .event-text {
     display: inline-block;
     line-height: 1.1em;
-    color: var(--text-color-green);
+    color: ;
     word-break: break-word;
 }
 
+/* TODO: Choose a text color of your liking using the available variables. */
 .days-left-text {
-    color: var(--text-color-orange);
+    color: ;
 }
 
 .right-side {
@@ -159,13 +162,14 @@ body {
     cursor: pointer;
 }
 
+/* TODO: Choose a background color of your liking using the available variables. */
 .toggle-slider {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--color-green);
+    background-color: ;
     border-radius: .5rem;
     transition: 0.2s;
 }
@@ -183,8 +187,9 @@ body {
     z-index: 2;
 }
 
+/* TODO: Choose a background color of your liking using the available variables. */
 input:checked+label .toggle-slider {
-    background-color: var(--text-color-orange);
+    background-color: ;
 }
 
 input:checked+label .toggle-slider:before {
@@ -244,6 +249,7 @@ input:checked+label .toggle-slider svg:last-of-type {
     /* Hide the default arrow in Internet Explorer 10 and Internet Explorer 11 */
 }
 
+/* TODO: Choose a background color of your liking using the available variables. */
 .choose-event select {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -256,15 +262,16 @@ input:checked+label .toggle-slider svg:last-of-type {
     border: none;
     font-size: 1.25rem;
     color: white;
-    background-color: var(--color-blue);
+    background-color: ;
     border-radius: .5rem;
     padding: .5rem 1rem;
     padding-right: 2.75rem;
     transition: background-image 0.2s ease;
 }
 
+/* TODO: Choose a text color of your liking using the available variables. */
 .event-date {
-    color: var(--text-color-orange);
+    color: ;
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
     font-weight: 900;
