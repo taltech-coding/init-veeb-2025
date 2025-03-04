@@ -39,8 +39,6 @@ Oluline on, et sul oleks tore ja et saaksid natuke oma loovust valla lasta! Kui 
 
 ### 🔄️ Tähtpäeva nime uuendamine
 
-### 3️⃣ Järgmise tähtpäeva kuupäeva kuvamine
-
 ### ☀️🌙 Dark ja light mode lüliti parandamine
 
 ### ⭐ Boonusülesanded
