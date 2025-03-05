@@ -131,12 +131,13 @@ function updateEndEvent(date) {
     )}`;
 }
 
+// TODO: Add the correct element ID to make the event text change.
 function updateEventTitle(isInProgress) {
     if (isInProgress) {
-        document.getElementById("eventText").innerHTML = `${endEventNames[getEventType()]} on jäänud`
+        document.getElementById("").innerHTML = `${endEventNames[getEventType()]} on jäänud`
         document.title = `Päevi ${endEventNames[getEventType()].toLowerCase().replace("&shy;", "")}`
     } else {
-        document.getElementById("eventText").innerHTML = `${startEventNames[getEventType()]} on jäänud`
+        document.getElementById("").innerHTML = `${startEventNames[getEventType()]} on jäänud`
         document.title = `Päevi ${startEventNames[getEventType()].toLowerCase().replace("&shy;", "")}`
     }
 }
@@ -214,14 +215,15 @@ if (savedTheme) {
 }
 
 // Listen for toggle changes
+// TODO: Insert the correct attribute value to toggle between light and dark mode. HINT: Look at the localStorage.setItem() below.
 themeSwitch.addEventListener("change", function (e) {
     if (e.target.checked) {
         // Switch to dark mode
-        document.documentElement.setAttribute("data-theme", "dark");
+        document.documentElement.setAttribute("data-theme", "");
         localStorage.setItem("theme", "dark");
     } else {
         // Switch to light mode
-        document.documentElement.setAttribute("data-theme", "light");
+        document.documentElement.setAttribute("data-theme", "");
         localStorage.setItem("theme", "light");
     }
 });

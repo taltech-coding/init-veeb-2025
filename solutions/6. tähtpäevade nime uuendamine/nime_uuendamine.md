@@ -1,3 +1,5 @@
+```js
+// TODO: Add the correct element ID to make the event text change.
 function updateEventTitle(isInProgress) {
     if (isInProgress) {
         document.getElementById("eventText").innerHTML = `${endEventNames[getEventType()]} on jäänud`
@@ -7,3 +9,4 @@ function updateEventTitle(isInProgress) {
         document.title = `Päevi ${startEventNames[getEventType()].toLowerCase().replace("&shy;", "")}`
     }
 }
+```

@@ -1,3 +1,5 @@
+```js
+// TODO: Insert the correct attribute value to toggle between light and dark mode. HINT: Look at the localStorage.setItem() below.
 if (e.target.checked) {
     // Switch to dark mode
     document.documentElement.setAttribute("data-theme", "dark");
@@ -7,3 +9,4 @@ if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
 }
+```
