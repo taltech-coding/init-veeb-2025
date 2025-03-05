@@ -54,7 +54,6 @@ jutumärkide vahele.
 Kui see kõik kokku panna, siis CSS faili ühendamine võiks välja näha umbes selline:
 
 ```html
-
 <link rel="stylesheet" href="style.css"/>
 ```
 
@@ -66,7 +65,6 @@ talle märgendina lisada veel `defer`. `<script>` tag ei ole isesulguv, seetõtt
 Kui see kõik kokku panna, siis JavaScripti faili ühendamiseks kasutatav kood võiks olla näiteks selline:
 
 ```html
-
 <script src="script.js" type="text/javascript" defer></script>
 ```
 
@@ -115,22 +113,8 @@ mida saab igal pool kasutada.
 Muutujate kasutamiseks on selline funktsioon nagu `var()`, mille sisse sa paned muutuja nime, et seda kasutada. Näide:
 
 ```css 
-background-color:
-
-var
-(
---color-background
-
-)
-;
-color:
-
-var
-(
---color-orange
-
-)
-;
+background-color: var(--color-background);
+color: var(--color-orange);
 ```
 
 </details>
@@ -178,9 +162,7 @@ saaks õige väärtuse, siis vaata `script.js` faili algust, kus on iga tähtpä
 <summary>💡 Kuidas lisada õige väärtus option <i>tag</i>'ile?</summary>
 
 ```js
-    "kooli lõpp"
-:
-[ // "kooli lõpp" on tähtpäeva nimi ja selle sama nime pead sa ka optioni väärtuseks panema
+"kooli lõpp": [ // "kooli lõpp" on tähtpäeva nimi ja selle sama nime pead sa ka optioni väärtuseks panema
     {
         start: new Date("2025-06-18T00:00:00.000Z"),
         end: new Date("2025-06-26T23:59:59.000Z"),
@@ -189,7 +171,6 @@ saaks õige väärtuse, siis vaata `script.js` faili algust, kus on iga tähtpä
 ```
 
 ```html
-
 <option value="kooli lõpp">kooli lõpuni</option> <!-- "kooli lõpp" tuleb niimoodi sisestada -->
 ```
 
