@@ -19,13 +19,13 @@ Ka siin töötoas on parimaks abivahendiks abilised, kellelt küsimusi küsida. 
 
 ## Sissejuhatus
 
-Vaheajad on ühed oodatuimad tähtpäevad õpilaste elus. Küll aga on tüütu arvutada millal järgmine vaheaeg tuleb. Selleks hakkasid sa koos sõbraga arendama veebilehte, mis näitab reaalajas kui palju aega on vaheajani jäänud. Käes on aga eksamiperiood ja kahjuks peab su sõber õppima matemaatika järeleksamiks, sest ta kukkus eksami läbi. Seega oled jäänud üksi, et töö lõpule viia!
+Vaheajad on ühed oodatuimad tähtpäevad õpilaste elus. Küll aga on tüütu arvutada, millal järgmine vaheaeg tuleb. Selleks hakkasid sa koos sõbraga arendama veebilehte, mis näitab reaalajas, kui palju aega on vaheajani jäänud. Käes on aga eksamiperiood ja kahjuks peab su sõber õppima matemaatika järeleksamiks, sest ta kukkus eksami läbi. Seega tuleb sul üksinda töö lõpule viia!
 
 ## Ülesanded
 
-Oleme sulle ette valmistanud pisikesed ülesanded ning juhtnöörid nende lahendamiseks. Saad kätt proovida nii HTMLi, CSSi kui JavaScriptiga. See tähendab, et saad soovi korral muuta ise veebisaidi paigutust, lisada või eemdaldada elemente ning muuta selle välimust ja funktsionaalsust! 
+Oleme sulle ette valmistanud pisikesed ülesanded ning juhtnöörid nende lahendamiseks. Saad kätt proovida nii HTMLi, CSSi kui JavaScriptiga. See tähendab, et saad soovi korral muuta ise veebisaidi paigutust, lisada või eemaldada elemente ning muuta selle välimust ja funktsionaalsust! 
 
-Oluline on, et sul oleks tore ja et saaksid natuke oma loovust valla lasta! Kui satud segadusse või vajad abi, tõsta julgelt käsi või guugelda :)
+Oluline on, et sul oleks tore ja et saaksid natuke oma loovust valla lasta! Kui satud segadusse või vajad abi, siis tõsta julgelt käsi või guugelda :)
 
 ### ❓ Puuduvate _tag_'ide lisamine
 Nagu varasemalt mainitud sai, siis kogu HTML on üles ehitatud _tag_'ide peale. Iga HTMLi komponent on mingisugune _tag_!
@@ -41,9 +41,9 @@ Esiteks tuleks meil korrastada veidi faili `index.html`. Ava see fail ja otsi se
 ```html
   <link rel="stylesheet" href="style.css" />
 ```
-  JavaScripti faili ühendamine käib väga sarnaselt, aga seal tuleb kasutada tagi `<script>`. Skriptile tuleb märgenditeks anda JavaScripti faili nimi `src="failinimi"` ja tüüp `type="text/javascript"`. Kuna meie JavaScripti skript hakkab muutma veebilehe sisu, siis peaks tema ühendamisega ootama kuni ülejäänud veebileht on ära laadinud, ning selleks tuleb talle märgendina lisada veel defer. `<script>` tag ei ole isesulguv, seetõttu tuleb see lõpuks ka sulgeda: `</script>`
+  JavaScripti faili ühendamine käib väga sarnaselt, aga seal tuleb kasutada tagi `<script>`. Skriptile tuleb märgenditeks anda JavaScripti faili nimi `src="failinimi.js"` ja tüüp `type="text/javascript"`. Kuna meie JavaScripti skript hakkab muutma veebilehe sisu, siis peaks tema ühendamisega ootama kuni ülejäänud veebileht on ära laadinud, ning selleks tuleb talle märgendina lisada veel `defer`. `<script>` tag ei ole isesulguv, seetõttu tuleb see lõpuks ka sulgeda: `</script>`
   
-  Kui see kõik kokku panna, siis JavaScripti faili ühendamiseks kasutatav kood olla näiteks selline:
+  Kui see kõik kokku panna, siis JavaScripti faili ühendamiseks kasutatav kood võiks olla näiteks selline:
 ```html
 <script src="script.js" type="text/javascript" defer></script>
 ```
@@ -53,7 +53,7 @@ Esiteks tuleks meil korrastada veidi faili `index.html`. Ava see fail ja otsi se
 ### 💄 Puuduvate CSS väärtuste lisamine
 Nüüd kui HTMLi sisu parandatud sai, tuleks teha mõned korrektuurid ka veebisaidi välimusele. Sinu ülesandeks on veebisaidile puuduvad värvid lisada! 
 
-CSS koosneb _selector_'itest, millega valitakse elemente. Nende sees saab määrata elemendile erinevaid omadusi. Igale omadusele saab anda eri sorti väärtuseid. Omadused on näiteks:
+CSS koosneb _selector_'itest, millega valitakse elemente. Nende sees saab määrata elemendile erinevaid omadusi. Igale omadusele saab omakorda anda eri sorti väärtuseid. Omadused on näiteks:
 - `color` - teksti värv
 - `background-color` - tausta värv
 - `font-size` - teksti suurus
@@ -63,7 +63,7 @@ CSS koosneb _selector_'itest, millega valitakse elemente. Nende sees saab määr
 - `padding` - elemendi sees olev "puhver" (Näiteks kui mul on musta joonega kast, mille sees on tekst, siis tekst puutub algul kasti. Kui lisada padding, siis tekib vahe teksti ja kastiääre vahele.)
 - jne (Fun fact: CSSil on üle 200 erineva omaduse)
 
-Mine faili `style.css` ja lisa puuduvad värvid kohtadesse, kus `background-color` või `color` väärtused on puudu. Et asi lihtsam oleks, oleme loonud värvidele muutujad (_variable_), mida saab kasutada. Neid muutujaid näed sa `style.css` failis ridadel 67-75!
+Mine faili `style.css` ja lisa puuduvad värvid kohtadesse, kus `background-color` või `color` väärtused on puudu. Need kohad leiad ülesse "TODO" kommentaaride järgi. Et asi lihtsam oleks, oleme loonud värvidele muutujad (_variable_), mida saab kasutada. Neid muutujaid näed sa `style.css` failis ridadel 67-75!
 
 <details>
 <summary>💡 Kuidas kasutada CSSis muutujaid?</summary>
@@ -92,16 +92,16 @@ color: var(--color-orange);
 </details>
 
 ### 🗓️ Kuupäevade lisamine
-Nüüd on aeg vaadata JavaScripti poole. Su sõber lisas juba päris mitme sündmuse kuupäevad ise, kuid ta ei teadnud millal su sünni- ja nimepäev on. Seega pead sa need kuupäevad ise sisestama.
+Nüüd on aeg vaadata JavaScripti poole. Su sõber lisas juba päris mitme sündmuse kuupäevad ise, kuid ta ei mäletanud, millal su sünni- ja nimepäev on. Seega pead sa need kuupäevad ise sisestama.
 
-Failis `script.js` asub veebisaidi JavaScript. Sisu võib tunduda küll hirmus, kuid ära muretse! Enamus tööst on juba tehtud. Kohe faili alguses ongi sündmuste nimekiri (defineeritud kui _timetable_). 
+Failis `script.js` asub veebisaidi JavaScripti kood. Sisu võib tunduda küll hirmus, kuid ära muretse! Enamus tööst on juba tehtud. Kohe faili alguses ongi sündmuste nimekiri (defineeritud kui `timetable`). 
 
-Nagu näha on, siis sünnipäeva ja nimepäeva kuupäevadesse on jäetud `YYYY-MM-DD`, sinu ülesanne ongi need asendada samas formaadis numbritega (Ehk siis aasta-kuu-päev)! Õiget vormistust näed ka teiste ürituste pealt. Vaata, et lisaksid oma kuupäevale nii alguse kui lõpu väärtuse, et kood toimiks õigesti (algus ja lõpp on samal päeval, lihtsalt algus on kell 00.00 ja lõpp kell 23.59).
+Nagu näha on, siis sünnipäeva ja nimepäeva kuupäevadesse on jäetud `YYYY-MM-DD`, sinu ülesanne ongi need asendada samas formaadis numbritega (Ehk siis aasta-kuu-päev)! Õiget vormistust näed ka teiste ürituste pealt. Vaata, et lisaksid oma kuupäevale nii alguse kui lõpu väärtuse, et kood toimiks õigesti (algus ja lõpp on samal päeval, lihtsalt algus on kell 00:00 ja lõpp kell 23:59).
 
 ### 🔢 Aja arvutamine
-Jätkame JavaScriptiga. Su sõber on kirjutanud valmis aja arvutamiseks funkstiooni `updateCountdown();`, kuid ta ei kutsu seda kuskil välja ehk funktsioon ei käivitu. Lisaks sellele peab funktsiooni välja kutsuma iga 1 sekundi ehk 1000 millisekundi tagant, et see toimiks nagu õige kell toimima peaks.
+Jätkame JavaScriptiga. Su sõber on kirjutanud valmis aja arvutamiseks funktsiooni `updateCountdown();`, kuid ta ei kutsu seda kuskil välja ehk funktsioon ei käivitu. Lisaks sellele peab funktsiooni välja kutsuma iga 1 sekundi ehk 1000 millisekundi tagant, et see toimiks nagu õige kell toimima peaks.
 
-Rida 182 läheduses peaksid leidma "TODO", mis käib selle ülesande kohta. Seal peadki sa sisestama õige funktsiooni nime, et see alguses välja kutsuda. Kohe pärast seda pead sa uuesti funkstiooni nime sisestama teise funktsiooni `setInterval(FUNKTSIOONI_NIMI, 1000);`, sest seal hakatakse aja uuendamise funktsiooni välja kutsuma iga sekundi tagant.
+Rida 182 läheduses peaksid leidma "TODO", mis käib selle ülesande kohta. Seal peadki sa sisestama õige funktsiooni nime, et see alguses välja kutsuda. Nagu näha, siis funktsiooni välja kutsumiseks tuleb funktsiooni nime järgi panna (sulud). Kohe pärast seda pead sa uuesti funktsiooni nime sisestama teise funktsiooni `setInterval(FUNKTSIOONI_NIMI, 1000);`, sest seal hakatakse aja uuendamise funktsiooni välja kutsuma iga sekundi tagant. Pane tähele, et siin pole funktsiooni nime järele enam (sulge) vaja!
 
 Kui oled kõik õigesti teinud, siis nüüd peaks veebilehel asuv _countdown_ toimima!
 
@@ -135,6 +135,8 @@ Nüüd on meie veebileht juba päris funktsionaalne! Ent tähelepanelik vaatleja
 Õnneks on selle vea parandamine imelihtne! Ava fail `script.js` ja otsi sealt üles funktsioon `updateEventTitle()`. See funktsioon peaks meie eest seda teksti uuendama, ent paistab, et koodi autor on unustanud määrata, millise ID-ga HTML-elementi me siinkohal uuendama peaks.
 
 Proovime sobiva elemendi ID üles leida! Ava fail `index.html` ja otsi sealt üles tekstielement, kus on kirjas "Vaheajani on jäänud". Nüüd jäta selle elemendi ID meelde, mine tagasi `script.js` faili, ja kirjuta seesama ID funktsiooni `updateEventTitle()` tühjade jutumärkide sisse. NB! ID tuleb ära muuta nii `if` kui ka `else` harudes!
+
+Kui failis `script.js` on parandused tehtud, siis võiks meie leht uue kuupäeva valimisel õigesti näidata, mis päevani meie _countdown_ nüüd loeb!
 
 ### ☀️🌙 Dark ja light mode lüliti parandamine
 Kõige ägedam asi on veel jäänud, et veebileht oleks lõpuks valmis! Nimelt tuleb korda teha teemalüliti (_theme switcher_). Siis saaksid silmad lõpuks puhata.
