@@ -24,14 +24,14 @@ const timetable = {
     ],
     "sünnipäev": [
         {
-            start: new Date("YYYY-MMM-DDT00:00:00.000Z"), // TODO: Replace with your birthday
-            end: new Date("YYYY-MMM-DDT23:59:59.000Z"), // TODO: Replace with your birthday (same as the previous line)
+            start: new Date("YYYY-MM-DDT00:00:00.000Z"), // TODO: Replace with your birthday
+            end: new Date("YYYY-MM-DDT23:59:59.000Z"), // TODO: Replace with your birthday (same as the previous line)
         }
     ],
     "nimepäev": [
         {
-            start: new Date("YYYY-MMM-DDT00:00:00.000Z"), // TODO: Replace with your name day 
-            end: new Date("YYYY-MMM-DDT23:59:59.000Z"), // TODO: Replace with your name day (same as the previous line)
+            start: new Date("YYYY-MM-DDT00:00:00.000Z"), // TODO: Replace with your name day 
+            end: new Date("YYYY-MM-DDT23:59:59.000Z"), // TODO: Replace with your name day (same as the previous line)
         }
     ],
     "kooli lõpp": [
