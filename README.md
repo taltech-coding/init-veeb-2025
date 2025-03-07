@@ -45,7 +45,7 @@ Esiteks tuleks meil korrastada veidi faili `index.html`. Ava see fail ja otsi se
 _tag_). Siin tuleb sul taastada ühendus meie HTML struktuurifaili, CSS stiilifaili ja JavaScript skriptifaili vahel.
 
 <details>
-  <summary>💡 Kuidas ühendada omavahel HTMLi, CSSi ja JavaScripti?</summary>
+  <summary>💡 Kuidas ühendada omavahel HTMLi ja CSSi?</summary>
 
 CSSi faili ühendamiseks saame kasutada isesulguvat tagi `<link>`, ning panna talle külge märgendi `rel="stylesheet"`, et
 anda märku, et tegemist on lehekülje stiili sisaldava failiga. CSS faili nimi tuleb panna märgendis `href=""`
@@ -56,11 +56,16 @@ Kui see kõik kokku panna, siis CSS faili ühendamine võiks välja näha umbes 
 ```html
 <link rel="stylesheet" href="style.css"/>
 ```
+</details>
 
-JavaScripti faili ühendamine käib väga sarnaselt, aga seal tuleb kasutada tagi `<script>`. Skriptile tuleb märgenditeks
-anda JavaScripti faili nimi `src="failinimi.js"` ja tüüp `type="text/javascript"`. Kuna meie JavaScripti skript hakkab
-muutma veebilehe sisu, siis peaks tema ühendamisega ootama kuni ülejäänud veebileht on ära laadinud, ning selleks tuleb
-talle märgendina lisada veel `defer`. `<script>` tag ei ole isesulguv, seetõttu tuleb see lõpuks ka sulgeda: `</script>`
+<details>
+  <summary>💡 Kuidas ühendada omavahel HTMLi ja JavaScripti?</summary>
+
+JavaScripti faili ühendamine käib väga sarnaselt kui CSSi ühendamine, aga seal tuleb kasutada tagi `<script>`. Skriptile
+tuleb märgenditeks anda JavaScripti faili nimi `src="failinimi.js"` ja tüüp `type="text/javascript"`. Kuna meie
+JavaScripti skript hakkab muutma veebilehe sisu, siis peaks tema ühendamisega ootama kuni ülejäänud veebileht on ära 
+laadinud, ning selleks tuleb talle märgendina lisada veel `defer`. `<script>` tag ei ole isesulguv, seetõttu tuleb see
+lõpuks ka sulgeda: `</script>`
 
 Kui see kõik kokku panna, siis JavaScripti faili ühendamiseks kasutatav kood võiks olla näiteks selline:
 
@@ -69,6 +74,29 @@ Kui see kõik kokku panna, siis JavaScripti faili ühendamiseks kasutatav kood v
 ```
 
 </details>
+
+Pärast HTMLi, CSSi ja JavaScripti vahel ühenduse taastamist tuleks HTML-fail veel kriitilise pilguga üle käia. Äkki on
+veel mõni HTMLi _tag_ jäänud korralikult lõpuni kirjutamata?
+
+Selgub, et üks _tag_ tuleks tõesti veel korda teha. HTMLis kasutatakse tähtsa teksti märgistamiseks tihti pealkirjasid
+(_heading_). Kõige tähtsam tekst märgistatakse ära _tag_'iga `<h1>`, sellest järgnev _tag_'iga `<h2>` jne.
+
+<details>
+  <summary>💡 Kuidas töötavad HTMLis pealkirjad?</summary>
+
+```html
+<h1>Suur pealkiri</h1>
+<h2>Alapealkiri</h2>
+<h3>Veidi väiksem alapealkiri</h3>
+<h4>Juba päris väike alapealkiri</h4>
+<h5>No ikka tõesti väike alapealkiri</h5>
+<h6>Peaaegu sama väike kui tavaline tekst</h6>
+```
+
+</details>
+
+Antud juhul piisab meil sellest, kui märgistame meie veebilehe kõige olulisema teksti, aja lugemise teksti, _tag_'iga
+`<h1>`.
 
 ### 💄 Puuduvate CSS väärtuste lisamine
 
